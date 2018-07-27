@@ -13,6 +13,9 @@ import com.wujie.mylistview.R;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 支付插件弹框
+ */
 public class PayActivity extends AppCompatActivity implements View.OnClickListener,ChoosePayBankPopupWindow.OnItemClickListener{
 
 
