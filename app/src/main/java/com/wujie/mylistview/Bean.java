@@ -12,7 +12,7 @@ public class Bean {
      * result : [{"title":"工商银行卡","cardnum":"6212261907000087176","type":0},{"title":"农业银行卡","cardnum":"6212261907000087198","type":0},{"title":"招商银行卡","cardnum":"6212261907000087176","type":0},{"title":"亲属卡two","type":1},{"title":"亲属卡one","type":1},{"title":"亲属卡3","type":1}]
      */
 
-    private int code;
+    private int code;//返回码
     private List<ResultBean> result;
 
     public int getCode() {
