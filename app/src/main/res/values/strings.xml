@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyListview</string>
+    <string name="new_bank_card_num">****&#160;&#160;&#160;&#160;****&#160;&#160;&#160;&#160;****&#160;&#160;&#160;&#160;%1$s</string>
+</resources>

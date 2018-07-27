@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+
+
+    <!-- 指定使用渐变背景色，使用sweep类型的渐变 -->
+    <gradient android:startColor="#FF015C87"
+        android:endColor="#FF008FAA"
+        android:angle="270"
+        android:centerX="0.5"
+        android:centerY="0.5"
+
+        />
+</shape>

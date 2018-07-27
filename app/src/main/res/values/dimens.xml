@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Titlebar -->
+    <dimen name="uni_title_bar_height">44dp</dimen>
+    <dimen name="uni_title_bar_right_area_height">22dp</dimen>
+
+    <!-- 字号设置 1号字体 Titlebar标题等文字 采用 -->
+    <dimen name="uni_text_size_1">18dp</dimen>
+</resources>

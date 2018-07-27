@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/uni_title_white_layout"
+    android:id="@+id/title_layout"
+    android:layout_gravity="center" >
+
+    <RelativeLayout
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/rl_title_back"
+        android:layout_width="@dimen/uni_title_bar_height"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/webview_return"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_left_title"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/rl_title_back"
+        android:layout_toEndOf="@+id/rl_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:visibility="visible"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_left_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+            tools:text="刘佳" />
+
+    </LinearLayout>
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/searchImgBtn"-->
+        <!--android:layout_toRightOf="@+id/rl_title_back"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:padding="5dp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/search_entry_icon"-->
+        <!--android:visibility="gone"/>-->
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18dp"
+        android:textColor="#13252e"
+        android:text="我是标题" >
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_title_right"
+        android:layout_centerVertical="true"
+        android:textSize="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/title_right_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/icon_choose_normal"
+        android:visibility="gone"
+        android:onClick="onClick"/>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e6e6e6"
+        />
+
+</RelativeLayout>
