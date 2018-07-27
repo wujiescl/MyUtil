@@ -35,10 +35,7 @@ public class PayActivity extends AppCompatActivity implements View.OnClickListen
 
         root.setOnClickListener(this);
         list_bigdata=new ArrayList<PayType>();
-
-        setData();
-
-
+        setData();//获取数据
     }
 
 
