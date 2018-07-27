@@ -2,6 +2,9 @@ package com.wujie.mylistview;
 
 import java.util.List;
 
+/**
+ * 实体类
+ */
 public class Bean {
   public  static  String name;
     /**
