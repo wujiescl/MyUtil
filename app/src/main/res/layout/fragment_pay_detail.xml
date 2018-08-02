@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/close_one"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="征信授权"
+            android:textColor="#ff000000"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="请仔细阅读并同意以下授权书" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_agreement"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/cb_choose1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:button="@null"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/checkbox_style" />
+
+            <TextView
+                android:id="@+id/tv_agreement_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《第三方数据授权书》"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff2495a8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/cb_choose2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:button="@null"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/checkbox_style"/>
+
+            <TextView
+                android:id="@+id/tv_agreement_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《人行征信查询授权书》"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff2495a8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/cb_choose3"
+                android:checked="false"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:button="@null"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/checkbox_style"/>
+
+            <TextView
+                android:id="@+id/tv_agreement_content3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《个人借款额度合同》"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff2495a8" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_confirm_agree"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/first_login_button"
+        android:padding="10dp"
+        android:text="确认"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>

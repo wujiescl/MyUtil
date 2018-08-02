@@ -97,6 +97,11 @@ public class FirstActivity extends Activity implements View.OnClickListener{
                        Intent intent10=new Intent(FirstActivity.this,TextviewActivity.class);
                        startActivity(intent10);
                        break;
+
+                   case 11:
+                       Intent intent11=new Intent(FirstActivity.this, com.wujie.mylistview.pop3.PopActivity.class);
+                       startActivity(intent11);
+                       break;
                }
             }
         });
@@ -122,7 +127,7 @@ public class FirstActivity extends Activity implements View.OnClickListener{
         list.add("唤起系统相机（适配8.0）含压缩");
         list.add("变色按钮");
         list.add("协议TextView");
-
+        list.add("弹出协议");
 
     }
 }

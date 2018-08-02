@@ -3,8 +3,9 @@
     package="com.wujie.mylistview">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,24 +20,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Bankcard.BankActivity"></activity>
-        <activity android:name=".pop.PopActivity"></activity>
-        <activity android:name=".pop2.PayActivity"></activity>
-        <activity android:name=".tab.MainTabActivity"></activity>
-        <activity android:name=".payBord.PayKeyPwdActivity"></activity>
-        <activity android:name=".camera.CameraActivity"></activity>
-        <activity android:name=".button.InputActivity"></activity>
-        <activity android:name=".toolbar.ToolbarActivity"
-            android:theme="@style/TranslucentTheme"
-            >
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Bankcard.BankActivity" />
+        <activity android:name=".pop.PopActivity" />
+        <activity android:name=".pop2.PayActivity" />
+        <activity android:name=".tab.MainTabActivity" />
+        <activity android:name=".payBord.PayKeyPwdActivity" />
+        <activity android:name=".camera.CameraActivity" />
+        <activity android:name=".button.InputActivity" />
+        <activity
+            android:name=".toolbar.ToolbarActivity"
+            android:theme="@style/TranslucentTheme"></activity>
+        <activity android:name=".Base.PerActivity" />
+        <activity android:name=".Base.BaseActivity" />
+        <activity android:name=".TextViewChangeColor.TextviewActivity" />
 
-        </activity>
-        <activity android:name=".Base.PerActivity"></activity>
-        <activity android:name=".Base.BaseActivity"></activity>
-        <activity android:name=".TextViewChangeColor.TextviewActivity"></activity>
-
-        <receiver android:name="com.wujie.mylistview.Base.NetBroadcastReceiver" >
+        <receiver android:name=".Base.NetBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
@@ -49,8 +48,10 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"></meta-data>
+                android:resource="@xml/file_paths" />
         </provider>
+
+        <activity android:name=".pop3.PopActivity"></activity>
     </application>
 
 </manifest>
