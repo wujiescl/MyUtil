@@ -13,6 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="请输入"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《中国移动协议》"/>
+    </LinearLayout>
     <Button
         android:layout_marginTop="20dp"
         android:id="@+id/btn_queding"
@@ -20,4 +33,6 @@
         android:layout_height="45dp"
         android:background="@drawable/first_login_button"
         android:text="确定"/>
+
+
 </LinearLayout>

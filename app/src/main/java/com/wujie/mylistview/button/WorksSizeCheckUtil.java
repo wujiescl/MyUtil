@@ -55,12 +55,8 @@ public class WorksSizeCheckUtil {
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if (checkAllEdit()){
-                    Log.i("TAG", "所有edittext有值了");
                     mChangeListener.textChange(true);
-                    button.setEnabled(true);
                 }else {
-                    button.setEnabled(false);
-                    Log.i("TAG", "有edittext没值了");
                     mChangeListener.textChange(false);
                 }
             }

@@ -7,6 +7,8 @@ import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -15,6 +17,9 @@ import com.wujie.mylistview.R;
 public class InputActivity extends Activity {
     private EditText editText1,editText2;
     private Button button;
+    private CheckBox checkBox;
+    private boolean ischoose=false;//协议是否选择
+    private boolean isnull=false;//输入框是否输入
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +28,7 @@ public class InputActivity extends Activity {
        editText1=findViewById(R.id.et_one);
        editText2=findViewById(R.id.et_two);
        button=findViewById(R.id.btn_queding);
-
+        checkBox=findViewById(R.id.cb);
         button.setEnabled(false);
         //1.初始化
         WorksSizeCheckUtil.textChangeListener textChangeListener = new WorksSizeCheckUtil.textChangeListener(button);
@@ -33,16 +38,19 @@ public class InputActivity extends Activity {
         WorksSizeCheckUtil.setChangeListener(new IEditTextChangeListener() {
             @Override
             public void textChange(boolean isHasContent) {
-                if(isHasContent){
-                    button.setEnabled(true);
-                }else{
-                    button.setEnabled(false);
-                }
+                    isnull=isHasContent;
+                    canClick();
             }
         });
 
 
-
+        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                ischoose=b;
+                canClick();
+            }
+        });
 
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -51,5 +59,13 @@ public class InputActivity extends Activity {
                 Toast.makeText(InputActivity.this,"queding",Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    private void canClick(){
+        if (ischoose&&isnull){
+            button.setEnabled(true);
+        }else {
+            button.setEnabled(false);
+        }
     }
 }

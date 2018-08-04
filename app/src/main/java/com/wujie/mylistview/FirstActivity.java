@@ -20,6 +20,7 @@ import com.wujie.mylistview.camera.CameraActivity;
 import com.wujie.mylistview.payBord.PayKeyPwdActivity;
 import com.wujie.mylistview.pop.PopActivity;
 import com.wujie.mylistview.pop2.PayActivity;
+import com.wujie.mylistview.sendMSG.SendMsgActivity;
 import com.wujie.mylistview.tab.MainTabActivity;
 import com.wujie.mylistview.toolbar.ToolbarActivity;
 
@@ -102,6 +103,10 @@ public class FirstActivity extends Activity implements View.OnClickListener{
                        Intent intent11=new Intent(FirstActivity.this, com.wujie.mylistview.pop3.PopActivity.class);
                        startActivity(intent11);
                        break;
+                   case 12:
+                       Intent intent12=new Intent(FirstActivity.this,SendMsgActivity.class);
+                       startActivity(intent12);
+                       break;
                }
             }
         });
@@ -128,6 +133,6 @@ public class FirstActivity extends Activity implements View.OnClickListener{
         list.add("变色按钮");
         list.add("协议TextView");
         list.add("弹出协议");
-
+        list.add("调起发短信");
     }
 }
