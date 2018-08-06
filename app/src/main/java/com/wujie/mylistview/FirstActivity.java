@@ -14,6 +14,7 @@ import android.widget.ListView;
 
 import com.wujie.mylistview.Bankcard.BankActivity;
 import com.wujie.mylistview.Base.PerActivity;
+import com.wujie.mylistview.Dialog.LodingActivity;
 import com.wujie.mylistview.TextViewChangeColor.TextviewActivity;
 import com.wujie.mylistview.button.InputActivity;
 import com.wujie.mylistview.camera.CameraActivity;
@@ -107,6 +108,10 @@ public class FirstActivity extends Activity implements View.OnClickListener{
                        Intent intent12=new Intent(FirstActivity.this,SendMsgActivity.class);
                        startActivity(intent12);
                        break;
+                   case 13:
+                       Intent intent13=new Intent(FirstActivity.this,LodingActivity.class);
+                       startActivity(intent13);
+                       break;
                }
             }
         });
@@ -134,5 +139,6 @@ public class FirstActivity extends Activity implements View.OnClickListener{
         list.add("协议TextView");
         list.add("弹出协议");
         list.add("调起发短信");
+        list.add("数据加载对话框");
     }
 }

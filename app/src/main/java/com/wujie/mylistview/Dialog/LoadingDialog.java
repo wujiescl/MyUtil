@@ -1,5 +1,5 @@
 
-package com.xiayiye.yhsh.flowerdialog;
+package com.wujie.mylistview.Dialog;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
@@ -15,6 +15,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import com.wujie.mylistview.R;
+
 /**
  * from https://github.com/Kaopiz/KProgressHUD
  * update minionshuang
@@ -192,7 +195,7 @@ public class LoadingDialog {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             requestWindowFeature(Window.FEATURE_NO_TITLE);
-            setContentView(R.layout.loading_progress_layout);
+            setContentView(R.layout.progress_view);
 
             Window window = getWindow();
             window.setBackgroundDrawable(new ColorDrawable(0));
@@ -223,7 +226,7 @@ public class LoadingDialog {
 
         private void addViewToFrame(View view) {
             if (view == null) return;
-            int wrapParam = ViewGroup.LayoutParams.WRAP_CONTENT;
+            int wrapParam = BackgroundLayout.dip2px(38);
             ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(wrapParam, wrapParam);
             mCustomViewContainer.addView(view, params);
         }

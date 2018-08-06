@@ -11,4 +11,5 @@
     <color name="bg_btn">#237aec</color>
     <color name="blue_light">#2e88ff</color>
     <color name="colorstatus">#3da1ff</color>
+    <color name="colorLoadingProgressBg">#b1000000</color>
 </resources>

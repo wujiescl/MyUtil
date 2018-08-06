@@ -14,15 +14,20 @@
  *    limitations under the License.
  */
 
-package com.xiayiye.yhsh.flowerdialog;
+package com.wujie.mylistview.Dialog;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.widget.ImageView;
+
+import com.wujie.mylistview.R;
+
 /**
  * from https://github.com/Kaopiz/KProgressHUD
  */
+@SuppressLint("AppCompatCustomView")
 public class SpinView extends ImageView   {
 
     private float mRotateDegrees;
@@ -41,7 +46,7 @@ public class SpinView extends ImageView   {
     }
 
     private void init() {
-        setImageResource(R.mipmap.ic_loading_progress);
+        setImageResource(R.drawable.ic_loading_progress);
         mFrameTime = 1000 / 12;
         mUpdateViewRunnable = new Runnable() {
             @Override

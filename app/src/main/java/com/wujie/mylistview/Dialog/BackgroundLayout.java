@@ -1,12 +1,15 @@
 
-package com.xiayiye.yhsh.flowerdialog;
+package com.wujie.mylistview.Dialog;
 
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
+
+import com.wujie.mylistview.R;
 
 
 /**
@@ -54,7 +57,7 @@ public class BackgroundLayout extends LinearLayout {
     }
 
     public void setCornerRadius(float radius) {
-        mCornerRadius = ScaleUtils.dip2px(radius);
+        mCornerRadius = dip2px(radius);
         initBackground(mBackgroundColor, mCornerRadius);
     }
 
@@ -71,5 +74,9 @@ public class BackgroundLayout extends LinearLayout {
         int height = getMeasuredHeight();
         int size = Math.max(width, height);
         setMeasuredDimension(size, size);
+    }
+
+    public static int dip2px(float f) {
+        return Math.round((Resources.getSystem().getDisplayMetrics().density * f) + 0.5f);
     }
 }
