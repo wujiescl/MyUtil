@@ -18,6 +18,7 @@ import com.wujie.mylistview.Dialog.LodingActivity;
 import com.wujie.mylistview.TextViewChangeColor.TextviewActivity;
 import com.wujie.mylistview.button.InputActivity;
 import com.wujie.mylistview.camera.CameraActivity;
+import com.wujie.mylistview.http.HttpActivity;
 import com.wujie.mylistview.payBord.PayKeyPwdActivity;
 import com.wujie.mylistview.pop.PopActivity;
 import com.wujie.mylistview.pop2.PayActivity;
@@ -112,6 +113,10 @@ public class FirstActivity extends Activity implements View.OnClickListener{
                        Intent intent13=new Intent(FirstActivity.this,LodingActivity.class);
                        startActivity(intent13);
                        break;
+                   case 14:
+                       Intent intent14=new Intent(FirstActivity.this,HttpActivity.class);
+                       startActivity(intent14);
+                       break;
                }
             }
         });
@@ -140,5 +145,6 @@ public class FirstActivity extends Activity implements View.OnClickListener{
         list.add("弹出协议");
         list.add("调起发短信");
         list.add("数据加载对话框");
+        list.add("获取接口数据");
     }
 }

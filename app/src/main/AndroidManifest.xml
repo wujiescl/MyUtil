@@ -55,7 +55,8 @@
 
         <activity android:name=".pop3.PopActivity" />
         <activity android:name=".sendMSG.SendMsgActivity" />
-        <activity android:name=".Dialog.LodingActivity"></activity>
+        <activity android:name=".Dialog.LodingActivity" />
+        <activity android:name=".http.HttpActivity"></activity>
     </application>
 
 </manifest>
