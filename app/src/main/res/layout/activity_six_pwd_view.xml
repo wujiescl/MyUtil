@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.wujie.mylistview.SixPwdView.SixPwdViewActivity">
+    <com.wujie.mylistview.SixPwdView.PasswordInputView
+        android:id="@+id/passwordInputView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="25dp"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLength="6"
+        app:pivBorderColor="#cccccc"
+        app:pivBorderWidth="10dp"
+        app:pivPasswordColor="#000000"
+        app:pivPasswordLength="6"
+        app:pivPasswordWidth="10dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordInputView"
+        android:layout_marginTop="20dp"
+        android:text="button" />
+</LinearLayout>
